@@ -2,9 +2,11 @@ module github.com/simnalamburt/xcaddybug
 
 go 1.17
 
+replace dummyreplace v0.0.1 => golang.org/x/example v0.0.0-20210811190340-787a929d5a0d
+
 require (
+	dummyreplace v0.0.1
 	github.com/caddyserver/caddy/v2 v2.4.3
-	golang.org/x/example v0.0.0-20210811190340-787a929d5a0d
 )
 
 require (

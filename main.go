@@ -1,8 +1,8 @@
 package xcaddybug
 
 import (
+	"dummyreplace/stringutil"
 	"github.com/caddyserver/caddy/v2"
-	"golang.org/x/example/stringutil"
 )
 
 func init() {
