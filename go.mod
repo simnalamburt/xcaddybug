@@ -2,11 +2,19 @@ module github.com/simnalamburt/xcaddybug
 
 go 1.17
 
-replace example.com v0.0.1 => golang.org/x/example v0.0.0-20210811190340-787a929d5a0d
+replace (
+	replacetest1 v1.2.3 => golang.org/x/example v0.0.0-20210811190340-787a929d5a0d
+	replacetest2 => golang.org/x/example v0.0.0-20210407023211-09c3a5e06b5d
+	replacetest3 v1.2.3 => ./fork1
+	replacetest4 => ./fork2
+)
 
 require (
-	example.com v0.0.1
 	github.com/caddyserver/caddy/v2 v2.4.3
+	replacetest1 v1.2.3
+	replacetest2 v0.0.1
+	replacetest3 v1.2.3
+	replacetest4 v0.0.1
 )
 
 require (
