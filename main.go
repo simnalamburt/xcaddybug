@@ -1,7 +1,7 @@
 package xcaddybug
 
 import (
-	"dummyreplace/stringutil"
+	"example.com/stringutil"
 	"github.com/caddyserver/caddy/v2"
 )
 
